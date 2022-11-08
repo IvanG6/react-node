@@ -1,0 +1,49 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.page-link {
+  width: 48px;
+  height: 48px;
+  padding-top: 10px;
+  text-align: center;
+  border: 2px solid #f1f1f1 !important;
+  border-radius: 8px;
+  background-color: #fff !important;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1a1a1a !important;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.btn {
+  border: none !important;
+
+  &[disabled] {
+    & path {
+      stroke: #F1F1F1;
+    }
+  }
+}
+
+.page-item {
+  margin-left: 5px;
+
+  &.active .page-link {
+    text-align: center;
+    background-color: #3a80ba !important;
+    color: #fff !important;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
